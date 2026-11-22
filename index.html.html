@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightcord — Download Lightcord Discord Client Mod for Windows PC</title>
+    
+    <!-- SEO & Meta Tags -->
+    <meta name="description" content="Download Lightcord for Windows PC. Lightcord is a fast, lightweight, open-source Discord client mod and custom Discord desktop client supporting 300+ plugins, custom themes, and zero telemetry.">
+    <meta name="keywords" content="lightcord, download lightcord, lightcord download, lightcord pc, lightcord windows, lightcord exe, lightcord client, lightcord mod, lightcord discord, lightcord github, lightcord setup, lightcord installer, lightcord latest release, lightcord plugins, lightcord themes, lightcord custom css, lightcord 64bit, lightcord x64, lightcord macos, lightcord linux, lightcord privacy, lightcord lightweight, lightcord fast client, discord client mod, best discord client mod, custom discord client, lightweight discord client, fast discord client, open source discord client, discord mods, discord mod download, discord client alternative, discord plugins, discord custom themes, defcord, nightcord, vencord, vencordarabia, legcord, betterdiscord, discord desktop app, discord pc download, private discord client">
+    <meta name="author" content="Lightcord Team">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Discord Embed -->
+    <meta property="og:title" content="Lightcord — Lightweight Discord Client Mod">
+    <meta property="og:description" content="Download Lightcord for Windows PC. Fast, lightweight, and secure Discord client modification with 300+ plugins, custom themes, and zero telemetry.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lightcord.live">
+    <meta property="og:image" content="https://i.imgur.com/HD6SJbv.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="theme-color" content="#000000">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lightcord — Discord Client Mod">
+    <meta name="twitter:description" content="Download Lightcord for Windows PC. Lightweight and secure Discord client mod supporting 300+ plugins and custom themes.">
+    <meta name="twitter:image" content="https://files.catbox.moe/9u86sp.jpg">
+
+    <link rel="icon" type="image/jpeg" href="https://files.catbox.moe/9u86sp.jpg">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Background Grid */
+        .bg-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 48px 48px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Spotlight */
+        .spotlight {
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(167, 139, 250, 0.09) 0%, transparent 65%);
+            border-radius: 50%;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            top: -500px;
+            left: -500px;
+        }
+
+        .wrapper {
+            position: relative;
+            z-index: 10;
+            max-width: 1120px;
+            min-height: 100vh;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 1rem;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .brand-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            overflow: hidden;
+            background: #0d0d11;
+        }
+
+        .brand-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .brand-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .version-tag {
+            font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+            font-size: 0.72rem;
+            color: #9ca3af;
+            background: #0d0d11;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2px 7px;
+            border-radius: 6px;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-btn {
+            background: #08080a;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #a1a1aa;
+            font-family: inherit;
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 0.55rem 0.95rem;
+            border-radius: 10px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .nav-btn svg {
+            width: 15px;
+            height: 15px;
+            fill: currentColor;
+        }
+
+        .nav-btn:hover {
+            color: #ffffff;
+            border-color: rgba(255, 255, 255, 0.25);
+            background: #121216;
+        }
+
+        /* Main Hero */
+        main {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 3.5rem;
+            align-items: center;
+            padding: 3rem 0;
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.35rem 0.85rem;
+            border-radius: 999px;
+            background: #08080a;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #a1a1aa;
+            margin-bottom: 1.5rem;
+        }
+
+        .pulse-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #10b981;
+            box-shadow: 0 0 8px #10b981;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        .hero-heading {
+            font-size: 3.2rem;
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -1.5px;
+            color: #ffffff;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-heading span {
+            color: #71717a;
+        }
+
+        .hero-subtitle {
+            font-size: 1.02rem;
+            line-height: 1.65;
+            color: #9ca3af;
+            max-width: 530px;
+            margin-bottom: 2rem;
+        }
+
+        /* CTA Group */
+        .cta-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 2rem;
+        }
+
+        /* Crystal Glowing Download Button */
+        .btn-crystal {
+            position: relative;
+            background: linear-gradient(
+                145deg,
+                rgba(255, 255, 255, 0.18) 0%,
+                rgba(167, 139, 250, 0.14) 45%,
+                rgba(255, 255, 255, 0.05) 100%
+            );
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            color: #ffffff;
+            font-size: 0.92rem;
+            font-weight: 600;
+            padding: 0.88rem 1.7rem;
+            border-radius: 12px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.32);
+            overflow: hidden;
+            transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow:
+                inset 0 1px 1px rgba(255, 255, 255, 0.45),
+                inset 0 -1px 2px rgba(167, 139, 250, 0.25),
+                0 0 22px rgba(167, 139, 250, 0.28),
+                0 8px 28px rgba(0, 0, 0, 0.75);
+        }
+
+        .btn-crystal::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 10%;
+            right: 10%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.85), transparent);
+            pointer-events: none;
+        }
+
+        .btn-crystal::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -75%;
+            width: 50%;
+            height: 200%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.28),
+                transparent
+            );
+            transform: rotate(25deg);
+            transition: left 0.6s ease;
+            pointer-events: none;
+        }
+
+        .btn-crystal:hover {
+            transform: translateY(-2px);
+            border-color: rgba(216, 180, 254, 0.75);
+            background: linear-gradient(
+                145deg,
+                rgba(255, 255, 255, 0.24) 0%,
+                rgba(167, 139, 250, 0.24) 50%,
+                rgba(255, 255, 255, 0.08) 100%
+            );
+            box-shadow:
+                inset 0 1px 1px rgba(255, 255, 255, 0.7),
+                inset 0 -1px 3px rgba(192, 132, 252, 0.4),
+                0 0 34px rgba(167, 139, 250, 0.55),
+                0 0 65px rgba(139, 92, 246, 0.28),
+                0 10px 30px rgba(0, 0, 0, 0.85);
+        }
+
+        .btn-crystal:hover::after {
+            left: 130%;
+        }
+
+        .btn-secondary {
+            background: #08080a;
+            color: #ffffff;
+            font-size: 0.92rem;
+            font-weight: 500;
+            padding: 0.88rem 1.35rem;
+            border-radius: 12px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            transition: all 0.2s ease;
+        }
+
+        .btn-secondary:hover {
+            background: #121216;
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        /* Meta Specs Bar */
+        .meta-bar {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1.5rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 0.82rem;
+            color: #6b7280;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .meta-item strong {
+            color: #d1d5db;
+            font-weight: 500;
+            font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+        }
+
+        .os-list {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+        }
+
+        .os-list svg {
+            width: 16px;
+            height: 16px;
+            fill: #9ca3af;
+            transition: fill 0.2s ease;
+        }
+
+        .os-list svg:hover {
+            fill: #ffffff;
+        }
+
+        /* Right Side Card */
+        .panel-card {
+            background: #08080a;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 18px;
+            padding: 1.5rem;
+            position: relative;
+        }
+
+        .panel-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .window-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .window-dots span {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .panel-label {
+            font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+            font-size: 0.72rem;
+            color: #6b7280;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .stat-box {
+            background: #000000;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 1rem;
+        }
+
+        .stat-title {
+            font-size: 0.75rem;
+            color: #6b7280;
+            margin-bottom: 6px;
+        }
+
+        .stat-value {
+            font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .stat-value.accent {
+            color: #a78bfa;
+        }
+
+        .spec-rows {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .spec-row {
+            background: #000000;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 11px;
+            padding: 0.8rem 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.84rem;
+        }
+
+        .spec-row span:first-child {
+            color: #9ca3af;
+        }
+
+        .spec-tag {
+            font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+            font-size: 0.75rem;
+            color: #ffffff;
+            background: #111115;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2px 8px;
+            border-radius: 6px;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 1.25rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.8rem;
+            color: #6b7280;
+        }
+
+        .footer-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+        }
+
+        .footer-tags span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .footer-tags span::before {
+            content: '';
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #a78bfa;
+        }
+
+        /* Modal */
+        .modal-backdrop {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.88);
+            z-index: 100;
+            justify-content: center;
+            align-items: center;
+            padding: 1.25rem;
+        }
+
+        .modal-box {
+            background: #0a0a0d;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 18px;
+            padding: 2rem;
+            max-width: 560px;
+            width: 100%;
+            max-height: 82vh;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1.25rem;
+            right: 1.25rem;
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: #141419;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #a1a1aa;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-close:hover {
+            color: #ffffff;
+        }
+
+        .modal-heading {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+        }
+
+        .policy-block {
+            margin-bottom: 1.25rem;
+        }
+
+        .policy-block h3 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 0.4rem;
+        }
+
+        .policy-block p,
+        .policy-block li {
+            font-size: 0.86rem;
+            line-height: 1.6;
+            color: #9ca3af;
+        }
+
+        .policy-block ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .policy-block li {
+            padding-left: 14px;
+            position: relative;
+            margin-bottom: 4px;
+        }
+
+        .policy-block li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #a78bfa;
+        }
+
+        @media (max-width: 860px) {
+            main {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+                padding: 2rem 0;
+            }
+            .hero-heading {
+                font-size: 2.4rem;
+            }
+            footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="spotlight" id="spotlight"></div>
+
+    <div class="wrapper">
+        <!-- Header -->
+        <header>
+            <a href="#" class="brand">
+                <div class="brand-icon">
+                    <img src="https://files.catbox.moe/9u86sp.jpg" alt="Lightcord Discord Client Logo">
+                </div>
+                <span class="brand-title">
+                    Lightcord
+                    <span class="version-tag">v1.2</span>
+                </span>
+            </a>
+
+            <div class="nav-actions">
+                <button class="nav-btn" id="openPrivacy" type="button">
+                    <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Privacy
+                </button>
+                <a href="https://github.com/Joshix-1/Lightcord" target="_blank" rel="noopener noreferrer" class="nav-btn">
+                    <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    GitHub
+                </a>
+            </div>
+        </header>
+
+        <!-- Main Hero -->
+        <main>
+            <div>
+                <div class="status-badge">
+                    <span class="pulse-dot"></span>
+                    Lightweight Discord Client Mod &amp; Zero Telemetry
+                </div>
+
+                <h1 class="hero-heading">
+                    Lightcord Client Mod.<br>
+                    <span>Fast Discord without limits.</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Download Lightcord for Windows PC — a fast, lightweight, open-source Discord client mod and custom Discord desktop client built for low memory usage, local privacy, custom themes, and 300+ Discord plugins.
+                </p>
+
+                <div class="cta-row">
+                    <a href="https://github.com/x69n/discordx/releases/download/v1.2/lightcord.exe" class="btn-crystal">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Download Lightcord for Windows
+                    </a>
+                    <a href="https://github.com/Joshix-1/Lightcord" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                        Lightcord GitHub
+                    </a>
+                </div>
+
+                <div class="meta-bar">
+                    <div class="meta-item">
+                        <span>Build:</span>
+                        <strong>x64 / Universal</strong>
+                    </div>
+                    <div class="meta-item">
+                        <span>Supports:</span>
+                        <div class="os-list" title="Windows, macOS, Linux">
+                            <!-- Windows -->
+                            <svg viewBox="0 0 24 24"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.6L24 0v11.4h-13.051M0 12.45h9.75v9.45L0 20.55m10.949-8.1h13.051V24l-13.051-1.8z"/></svg>
+                            <!-- macOS -->
+                            <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.83 5.34c.56-.68.94-1.63.84-2.58-.81.03-1.8.54-2.38 1.22-.52.6-.98 1.56-.86 2.5.91.07 1.84-.46 2.4-1.14z"/></svg>
+                            <!-- Linux (Tux) -->
+                            <svg viewBox="0 0 24 24"><path d="M12.02 2c-2.35 0-3.79 1.72-4.29 4.2-.36 1.78-.15 3.45.22 4.76-.86.79-1.95 2.02-2.57 3.53-.65 1.59-.68 3.28.14 4.53.68 1.04 1.83 1.58 3.06 1.58.78 0 1.53-.22 2.08-.52.23.3.5.54.78.54s.55-.24.78-.54c.55.3 1.3.52 2.08.52 1.23 0 2.38-.54 3.06-1.58.82-1.25.79-2.94.14-4.53-.62-1.51-1.71-2.74-2.57-3.53.37-1.31.58-2.98.22-4.76C15.81 3.72 14.37 2 12.02 2zm-1.65 3.45c.46 0 .84.42.84.94s-.38.94-.84.94-.84-.42-.84-.94.38-.94.84-.94zm3.3 0c.46 0 .84.42.84.94s-.38.94-.84.94-.84-.42-.84-.94.38-.94.84-.94zm-1.65 1.85l1.65 1.35-1.65.9-1.65-.9 1.65-1.35zm0 3.3c2.45 0 4.45 2.15 4.45 4.8 0 1.95-1.05 3.4-2.55 3.85-.8.24-1.35-.25-1.9-.25s-1.1.49-1.9.25c-1.5-.45-2.55-1.9-2.55-3.85 0-2.65 2-4.8 4.45-4.8z"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Telemetry Panel -->
+            <div class="panel-card">
+                <div class="panel-top">
+                    <div class="window-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <span class="panel-label">LIGHTCORD_CLIENT_SPECS</span>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-title">Discord Plugins</div>
+                        <div class="stat-value accent">300+</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-title">Active Installs</div>
+                        <div class="stat-value">50K+</div>
+                    </div>
+                </div>
+
+                <div class="spec-rows">
+                    <div class="spec-row">
+                        <span>Lightweight Performance</span>
+                        <span class="spec-tag">Ultra-Low RAM</span>
+                    </div>
+                    <div class="spec-row">
+                        <span>Discord Client Privacy</span>
+                        <span class="spec-tag">100% Local</span>
+                    </div>
+                    <div class="spec-row">
+                        <span>Custom Themes &amp; CSS</span>
+                        <span class="spec-tag">Native Support</span>
+                    </div>
+                    <div class="spec-row">
+                        <span>Open Source Mod</span>
+                        <span class="spec-tag">Verified Code</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-tags">
+                <span>Lightcord Discord Mod</span>
+                <span>Open Source Discord Client</span>
+                <span>Custom Themes &amp; Plugins</span>
+                <span>Windows PC Installer</span>
+            </div>
+            <div>Lightcord &copy; 2026</div>
+        </footer>
+    </div>
+
+    <!-- Privacy Modal -->
+    <div class="modal-backdrop" id="privacyModal">
+        <div class="modal-box">
+            <button class="modal-close" id="closePrivacy" type="button" aria-label="Close modal">&times;</button>
+            <h2 class="modal-heading">Lightcord Privacy Policy</h2>
+            
+            <div class="policy-block">
+                <h3>Our Commitment</h3>
+                <p>Lightcord is a lightweight, open-source Discord client mod built to protect your privacy. All client modifications execute locally on your PC with zero external data collection.</p>
+            </div>
+
+            <div class="policy-block">
+                <h3>Zero Data Collection</h3>
+                <ul>
+                    <li>No personal information or Discord tokens are ever collected.</li>
+                    <li>No tracking of your Discord activity, servers, or messages.</li>
+                    <li>No third-party analytics, cookies, or data sharing.</li>
+                </ul>
+            </div>
+
+            <div class="policy-block">
+                <h3>Security &amp; Disclaimer</h3>
+                <p>Lightcord source code is publicly available on GitHub. Lightcord is an independent Discord client modification and is not affiliated with Discord Inc.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const spotlight = document.getElementById('spotlight');
+        window.addEventListener('mousemove', function(e) {
+            spotlight.style.left = e.clientX + 'px';
+            spotlight.style.top = e.clientY + 'px';
+        });
+
+        const modal = document.getElementById('privacyModal');
+        const openBtn = document.getElementById('openPrivacy');
+        const closeBtn = document.getElementById('closePrivacy');
+
+        openBtn.addEventListener('click', function() {
+            modal.style.display = 'flex';
+        });
+
+        closeBtn.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        window.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.style.display === 'flex') {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
