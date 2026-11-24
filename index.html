@@ -3,37 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lightcord — Download Lightcord Discord Client Mod for Windows PC</title>
+    <title>Lightcord</title>
     
     <!-- SEO & Meta Tags -->
-    <meta name="description" content="Download Lightcord for Windows PC. Lightcord is a fast, lightweight, open-source Discord client mod and custom Discord desktop client supporting 300+ plugins, custom themes, and zero telemetry.">
-    <meta name="keywords" content="lightcord, download lightcord, lightcord download, lightcord pc, lightcord windows, lightcord exe, lightcord client, lightcord mod, lightcord discord, lightcord github, lightcord setup, lightcord installer, lightcord latest release, lightcord plugins, lightcord themes, lightcord custom css, lightcord 64bit, lightcord x64, lightcord macos, lightcord linux, lightcord privacy, lightcord lightweight, lightcord fast client, discord client mod, best discord client mod, custom discord client, lightweight discord client, fast discord client, open source discord client, discord mods, discord mod download, discord client alternative, discord plugins, discord custom themes, defcord, nightcord, vencord, vencordarabia, legcord, betterdiscord, discord desktop app, discord pc download, private discord client">
-    <meta name="author" content="Lightcord Team">
+    <meta name="description" content="Download Lightcord for Windows PC. Lightcord is a fast, lightweight, open-source Discord client modification supporting 300+ plugins, custom themes, and zero telemetry.">
+    <meta name="keywords" content="lightcord, download lightcord, lightcord pc, lightcord windows, lightcord exe, lightcord client, lightcord mod, lightcord discord, lightcord github, lightcord plugins, lightcord themes, discord client mod, lightweight discord client, open source discord client, vencord, legcord, betterdiscord">
+    <meta name="author" content="Lightcord">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://lightcord.live/">
+    
+    <!-- Favicons for Search Engines & Browsers -->
+    <link rel="icon" type="image/png" sizes="192x192" href="https://lightcord.live/favicon.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lightcord.live/favicon.png">
+    <link rel="shortcut icon" href="https://lightcord.live/favicon.png">
+    <link rel="apple-touch-icon" href="https://lightcord.live/favicon.png">
     
     <!-- Open Graph / Discord Embed -->
+    <meta property="og:site_name" content="Lightcord">
     <meta property="og:title" content="Lightcord — Lightweight Discord Client Mod">
     <meta property="og:description" content="Download Lightcord for Windows PC. Fast, lightweight, and secure Discord client modification with 300+ plugins, custom themes, and zero telemetry.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lightcord.live">
+    <meta property="og:url" content="https://lightcord.live/">
     <meta property="og:image" content="https://i.imgur.com/HD6SJbv.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
     <meta name="theme-color" content="#000000">
     
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lightcord — Discord Client Mod">
-    <meta name="twitter:description" content="Download Lightcord for Windows PC. Lightweight and secure Discord client mod supporting 300+ plugins and custom themes.">
-    <meta name="twitter:image" content="https://files.catbox.moe/9u86sp.jpg">
-
-    <link rel="icon" type="image/jpeg" href="https://files.catbox.moe/9u86sp.jpg">
+    <!-- Structured Data (Schema.org) for Search Engine Logo & Sitelinks -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "Lightcord",
+          "alternateName": "Lightcord Discord Client Mod",
+          "url": "https://lightcord.live/"
+        },
+        {
+          "@type": "Organization",
+          "name": "Lightcord",
+          "url": "https://lightcord.live/",
+          "logo": "https://lightcord.live/favicon.png"
+        },
+        {
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "SiteNavigationElement",
+              "position": 1,
+              "name": "Download",
+              "description": "Download Lightcord v1.2 for Windows Desktop PC.",
+              "url": "https://lightcord.live/#download"
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "position": 2,
+              "name": "Plugins",
+              "description": "Explore 300+ built-in Discord plugins and custom themes.",
+              "url": "https://lightcord.live/#plugins"
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "position": 3,
+              "name": "Support & FAQ",
+              "description": "Installation guide, local privacy details, and common questions.",
+              "url": "https://lightcord.live/#faq"
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "position": 4,
+              "name": "Source Code",
+              "description": "Open-source repositories and releases on GitHub.",
+              "url": "https://github.com/Joshix-1/Lightcord"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
 
     <style>
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
@@ -78,20 +134,17 @@
             position: relative;
             z-index: 10;
             max-width: 1120px;
-            min-height: 100vh;
             margin: 0 auto;
             padding: 2rem 1.5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
         }
 
-        /* Header */
+        /* Header & Navigation */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-bottom: 1rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         }
 
         .brand {
@@ -105,10 +158,10 @@
         .brand-icon {
             width: 38px;
             height: 38px;
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.16);
             overflow: hidden;
-            background: #0d0d11;
+            background: #ffffff;
         }
 
         .brand-icon img {
@@ -137,48 +190,49 @@
             border-radius: 6px;
         }
 
-        .nav-actions {
+        .main-nav {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
+            flex-wrap: wrap;
         }
 
-        .nav-btn {
+        .nav-link {
             background: #08080a;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             color: #a1a1aa;
             font-family: inherit;
-            font-size: 0.85rem;
+            font-size: 0.84rem;
             font-weight: 500;
-            padding: 0.55rem 0.95rem;
+            padding: 0.5rem 0.9rem;
             border-radius: 10px;
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 7px;
             text-decoration: none;
             cursor: pointer;
             transition: all 0.2s ease;
         }
 
-        .nav-btn svg {
-            width: 15px;
-            height: 15px;
-            fill: currentColor;
-        }
-
-        .nav-btn:hover {
+        .nav-link:hover {
             color: #ffffff;
             border-color: rgba(255, 255, 255, 0.25);
             background: #121216;
         }
 
-        /* Main Hero */
-        main {
+        .nav-link svg {
+            width: 14px;
+            height: 14px;
+            fill: currentColor;
+        }
+
+        /* Hero Section */
+        .hero {
             display: grid;
             grid-template-columns: 1.15fr 0.85fr;
             gap: 3.5rem;
             align-items: center;
-            padding: 3rem 0;
+            padding: 4.5rem 0;
         }
 
         .status-badge {
@@ -210,7 +264,7 @@
         }
 
         .hero-heading {
-            font-size: 3.2rem;
+            font-size: 3.25rem;
             font-weight: 800;
             line-height: 1.1;
             letter-spacing: -1.5px;
@@ -226,11 +280,10 @@
             font-size: 1.02rem;
             line-height: 1.65;
             color: #9ca3af;
-            max-width: 530px;
+            max-width: 520px;
             margin-bottom: 2rem;
         }
 
-        /* CTA Group */
         .cta-row {
             display: flex;
             flex-wrap: wrap;
@@ -287,12 +340,7 @@
             left: -75%;
             width: 50%;
             height: 200%;
-            background: linear-gradient(
-                90deg,
-                transparent,
-                rgba(255, 255, 255, 0.28),
-                transparent
-            );
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.28), transparent);
             transform: rotate(25deg);
             transition: left 0.6s ease;
             pointer-events: none;
@@ -301,12 +349,6 @@
         .btn-crystal:hover {
             transform: translateY(-2px);
             border-color: rgba(216, 180, 254, 0.75);
-            background: linear-gradient(
-                145deg,
-                rgba(255, 255, 255, 0.24) 0%,
-                rgba(167, 139, 250, 0.24) 50%,
-                rgba(255, 255, 255, 0.08) 100%
-            );
             box-shadow:
                 inset 0 1px 1px rgba(255, 255, 255, 0.7),
                 inset 0 -1px 3px rgba(192, 132, 252, 0.4),
@@ -339,7 +381,6 @@
             border-color: rgba(255, 255, 255, 0.25);
         }
 
-        /* Meta Specs Bar */
         .meta-bar {
             display: flex;
             flex-wrap: wrap;
@@ -373,20 +414,14 @@
             width: 16px;
             height: 16px;
             fill: #9ca3af;
-            transition: fill 0.2s ease;
         }
 
-        .os-list svg:hover {
-            fill: #ffffff;
-        }
-
-        /* Right Side Card */
+        /* Right Card */
         .panel-card {
             background: #08080a;
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 18px;
             padding: 1.5rem;
-            position: relative;
         }
 
         .panel-top {
@@ -478,10 +513,56 @@
             border-radius: 6px;
         }
 
+        /* Structured Sections for Sitelinks */
+        .sections-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            padding: 2rem 0 3.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .section-card {
+            background: #060608;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 1.5rem;
+            transition: border-color 0.2s ease;
+        }
+
+        .section-card:hover {
+            border-color: rgba(167, 139, 250, 0.35);
+        }
+
+        .section-card h2 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.55rem;
+        }
+
+        .section-card p {
+            font-size: 0.86rem;
+            line-height: 1.6;
+            color: #9ca3af;
+            margin-bottom: 1rem;
+        }
+
+        .section-link {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #a78bfa;
+            text-decoration: none;
+        }
+
+        .section-link:hover {
+            text-decoration: underline;
+        }
+
         /* Footer */
         footer {
             border-top: 1px solid rgba(255, 255, 255, 0.08);
-            padding-top: 1.25rem;
+            padding-top: 1.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -491,24 +572,26 @@
             color: #6b7280;
         }
 
-        .footer-tags {
+        .footer-links {
             display: flex;
             flex-wrap: wrap;
             gap: 1.25rem;
         }
 
-        .footer-tags span {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
+        .footer-links a,
+        .footer-links button {
+            background: none;
+            border: none;
+            color: #9ca3af;
+            font-family: inherit;
+            font-size: 0.8rem;
+            text-decoration: none;
+            cursor: pointer;
         }
 
-        .footer-tags span::before {
-            content: '';
-            width: 5px;
-            height: 5px;
-            border-radius: 50%;
-            background: #a78bfa;
+        .footer-links a:hover,
+        .footer-links button:hover {
+            color: #ffffff;
         }
 
         /* Modal */
@@ -555,10 +638,6 @@
             justify-content: center;
         }
 
-        .modal-close:hover {
-            color: #ffffff;
-        }
-
         .modal-heading {
             font-size: 1.35rem;
             font-weight: 700;
@@ -602,17 +681,16 @@
         }
 
         @media (max-width: 860px) {
-            main {
+            .hero {
                 grid-template-columns: 1fr;
                 gap: 2.5rem;
-                padding: 2rem 0;
+                padding: 2.5rem 0;
+            }
+            .sections-grid {
+                grid-template-columns: 1fr;
             }
             .hero-heading {
                 font-size: 2.4rem;
-            }
-            footer {
-                flex-direction: column;
-                align-items: flex-start;
             }
         }
     </style>
@@ -622,11 +700,11 @@
     <div class="spotlight" id="spotlight"></div>
 
     <div class="wrapper">
-        <!-- Header -->
+        <!-- Header with Clean Navigation -->
         <header>
-            <a href="#" class="brand">
+            <a href="https://lightcord.live/" class="brand">
                 <div class="brand-icon">
-                    <img src="https://files.catbox.moe/9u86sp.jpg" alt="Lightcord Discord Client Logo">
+                    <img src="favicon.png" onerror="this.src='https://files.catbox.moe/9u86sp.jpg'" alt="Lightcord Logo">
                 </div>
                 <span class="brand-title">
                     Lightcord
@@ -634,116 +712,137 @@
                 </span>
             </a>
 
-            <div class="nav-actions">
-                <button class="nav-btn" id="openPrivacy" type="button">
-                    <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    Privacy
-                </button>
-                <a href="https://github.com/Joshix-1/Lightcord" target="_blank" rel="noopener noreferrer" class="nav-btn">
+            <nav class="main-nav" aria-label="Main Navigation">
+                <a href="#download" class="nav-link">Download</a>
+                <a href="#plugins" class="nav-link">Plugins</a>
+                <a href="#faq" class="nav-link">Support &amp; FAQ</a>
+                <button class="nav-link" id="openPrivacy" type="button">Privacy</button>
+                <a href="https://github.com/Joshix-1/Lightcord" target="_blank" rel="noopener noreferrer" class="nav-link">
                     <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                    GitHub
+                    Source Code
                 </a>
-            </div>
+            </nav>
         </header>
 
         <!-- Main Hero -->
         <main>
-            <div>
-                <div class="status-badge">
-                    <span class="pulse-dot"></span>
-                    Lightweight Discord Client Mod &amp; Zero Telemetry
-                </div>
-
-                <h1 class="hero-heading">
-                    Lightcord Client Mod.<br>
-                    <span>Fast Discord without limits.</span>
-                </h1>
-
-                <p class="hero-subtitle">
-                    Download Lightcord for Windows PC — a fast, lightweight, open-source Discord client mod and custom Discord desktop client built for low memory usage, local privacy, custom themes, and 300+ Discord plugins.
-                </p>
-
-                <div class="cta-row">
-                    <a href="https://github.com/xkex1337-dotcom/x/releases/download/77/lightcordinstaller.rar" class="btn-crystal">
-                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                            <polyline points="7 10 12 15 17 10"/>
-                            <line x1="12" y1="15" x2="12" y2="3"/>
-                        </svg>
-                        Download Lightcord for Windows
-                    </a>
-                    <a href="https://github.com/Joshix-1/Lightcord" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-                        Lightcord GitHub
-                    </a>
-                </div>
-
-                <div class="meta-bar">
-                    <div class="meta-item">
-                        <span>Build:</span>
-                        <strong>x64 / Universal</strong>
+            <section class="hero" id="download">
+                <div>
+                    <div class="status-badge">
+                        <span class="pulse-dot"></span>
+                        Lightweight Discord Client Mod &amp; Zero Telemetry
                     </div>
-                    <div class="meta-item">
-                        <span>Supports:</span>
-                        <div class="os-list" title="Windows, macOS, Linux">
-                            <!-- Windows -->
-                            <svg viewBox="0 0 24 24"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.6L24 0v11.4h-13.051M0 12.45h9.75v9.45L0 20.55m10.949-8.1h13.051V24l-13.051-1.8z"/></svg>
-                            <!-- macOS -->
-                            <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.83 5.34c.56-.68.94-1.63.84-2.58-.81.03-1.8.54-2.38 1.22-.52.6-.98 1.56-.86 2.5.91.07 1.84-.46 2.4-1.14z"/></svg>
-                            <!-- Linux (Tux) -->
-                            <svg viewBox="0 0 24 24"><path d="M12.02 2c-2.35 0-3.79 1.72-4.29 4.2-.36 1.78-.15 3.45.22 4.76-.86.79-1.95 2.02-2.57 3.53-.65 1.59-.68 3.28.14 4.53.68 1.04 1.83 1.58 3.06 1.58.78 0 1.53-.22 2.08-.52.23.3.5.54.78.54s.55-.24.78-.54c.55.3 1.3.52 2.08.52 1.23 0 2.38-.54 3.06-1.58.82-1.25.79-2.94.14-4.53-.62-1.51-1.71-2.74-2.57-3.53.37-1.31.58-2.98.22-4.76C15.81 3.72 14.37 2 12.02 2zm-1.65 3.45c.46 0 .84.42.84.94s-.38.94-.84.94-.84-.42-.84-.94.38-.94.84-.94zm3.3 0c.46 0 .84.42.84.94s-.38.94-.84.94-.84-.42-.84-.94.38-.94.84-.94zm-1.65 1.85l1.65 1.35-1.65.9-1.65-.9 1.65-1.35zm0 3.3c2.45 0 4.45 2.15 4.45 4.8 0 1.95-1.05 3.4-2.55 3.85-.8.24-1.35-.25-1.9-.25s-1.1.49-1.9.25c-1.5-.45-2.55-1.9-2.55-3.85 0-2.65 2-4.8 4.45-4.8z"/></svg>
+
+                    <h1 class="hero-heading">
+                        Lightcord.<br>
+                        <span>Discord without limits.</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Download Lightcord for Desktop PC — a fast, lightweight, open-source Discord client modification built for low RAM usage, local privacy, custom themes, and 300+ plugins.
+                    </p>
+
+                    <div class="cta-row">
+                        <a href="https://github.com/x69n/discordx/releases/download/v1.2/lightcord.exe" class="btn-crystal">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="7 10 12 15 17 10"/>
+                                <line x1="12" y1="15" x2="12" y2="3"/>
+                            </svg>
+                            Download for Windows
+                        </a>
+                        <a href="https://github.com/Joshix-1/Lightcord" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                            View Source Code
+                        </a>
+                    </div>
+
+                    <div class="meta-bar">
+                        <div class="meta-item">
+                            <span>Build:</span>
+                            <strong>x64 / Universal</strong>
+                        </div>
+                        <div class="meta-item">
+                            <span>Supports:</span>
+                            <div class="os-list" title="Windows, macOS, Linux">
+                                <svg viewBox="0 0 24 24"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.6L24 0v11.4h-13.051M0 12.45h9.75v9.45L0 20.55m10.949-8.1h13.051V24l-13.051-1.8z"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.83 5.34c.56-.68.94-1.63.84-2.58-.81.03-1.8.54-2.38 1.22-.52.6-.98 1.56-.86 2.5.91.07 1.84-.46 2.4-1.14z"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12.02 2c-2.35 0-3.79 1.72-4.29 4.2-.36 1.78-.15 3.45.22 4.76-.86.79-1.95 2.02-2.57 3.53-.65 1.59-.68 3.28.14 4.53.68 1.04 1.83 1.58 3.06 1.58.78 0 1.53-.22 2.08-.52.23.3.5.54.78.54s.55-.24.78-.54c.55.3 1.3.52 2.08.52 1.23 0 2.38-.54 3.06-1.58.82-1.25.79-2.94.14-4.53-.62-1.51-1.71-2.74-2.57-3.53.37-1.31.58-2.98.22-4.76C15.81 3.72 14.37 2 12.02 2zm-1.65 3.45c.46 0 .84.42.84.94s-.38.94-.84.94-.84-.42-.84-.94.38-.94.84-.94zm3.3 0c.46 0 .84.42.84.94s-.38.94-.84.94-.84-.42-.84-.94.38-.94.84-.94zm-1.65 1.85l1.65 1.35-1.65.9-1.65-.9 1.65-1.35zm0 3.3c2.45 0 4.45 2.15 4.45 4.8 0 1.95-1.05 3.4-2.55 3.85-.8.24-1.35-.25-1.9-.25s-1.1.49-1.9.25c-1.5-.45-2.55-1.9-2.55-3.85 0-2.65 2-4.8 4.45-4.8z"/></svg>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Right Telemetry Panel -->
-            <div class="panel-card">
-                <div class="panel-top">
-                    <div class="window-dots">
-                        <span></span><span></span><span></span>
+                <!-- Right Telemetry Panel -->
+                <div class="panel-card">
+                    <div class="panel-top">
+                        <div class="window-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="panel-label">LIGHTCORD_CLIENT_SPECS</span>
                     </div>
-                    <span class="panel-label">LIGHTCORD_CLIENT_SPECS</span>
-                </div>
 
-                <div class="stats-grid">
-                    <div class="stat-box">
-                        <div class="stat-title">Discord Plugins</div>
-                        <div class="stat-value accent">300+</div>
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <div class="stat-title">Discord Plugins</div>
+                            <div class="stat-value accent">300+</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-title">Active Installs</div>
+                            <div class="stat-value">50K+</div>
+                        </div>
                     </div>
-                    <div class="stat-box">
-                        <div class="stat-title">Active Installs</div>
-                        <div class="stat-value">50K+</div>
-                    </div>
-                </div>
 
-                <div class="spec-rows">
-                    <div class="spec-row">
-                        <span>Lightweight Performance</span>
-                        <span class="spec-tag">Ultra-Low RAM</span>
-                    </div>
-                    <div class="spec-row">
-                        <span>Discord Client Privacy</span>
-                        <span class="spec-tag">100% Local</span>
-                    </div>
-                    <div class="spec-row">
-                        <span>Custom Themes &amp; CSS</span>
-                        <span class="spec-tag">Native Support</span>
-                    </div>
-                    <div class="spec-row">
-                        <span>Open Source Mod</span>
-                        <span class="spec-tag">Verified Code</span>
+                    <div class="spec-rows">
+                        <div class="spec-row">
+                            <span>Memory Footprint</span>
+                            <span class="spec-tag">Ultra-Low RAM</span>
+                        </div>
+                        <div class="spec-row">
+                            <span>Execution Environment</span>
+                            <span class="spec-tag">100% Local</span>
+                        </div>
+                        <div class="spec-row">
+                            <span>Custom CSS &amp; Themes</span>
+                            <span class="spec-tag">Native Support</span>
+                        </div>
+                        <div class="spec-row">
+                            <span>Source Transparency</span>
+                            <span class="spec-tag">Open Source</span>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <!-- Structured Cards (Helps Search Engines Generate Sitelinks) -->
+            <section class="sections-grid">
+                <article class="section-card" id="plugins">
+                    <h2>Plugins &amp; Custom Themes</h2>
+                    <p>Enable over 300 built-in Discord plugins, custom CSS snippets, and community themes directly inside Lightcord without heavy performance overhead.</p>
+                    <a href="https://github.com/Joshix-1/Lightcord" target="_blank" rel="noopener noreferrer" class="section-link">Explore Plugins &rarr;</a>
+                </article>
+
+                <article class="section-card" id="faq">
+                    <h2>Support &amp; FAQ</h2>
+                    <p>Need help installing or updating Lightcord? Run the latest v1.2 Windows installer to patch your desktop client cleanly with zero telemetry.</p>
+                    <a href="https://github.com/x69n/discordx/releases/download/v1.2/lightcord.exe" class="section-link">Download Installer &rarr;</a>
+                </article>
+
+                <article class="section-card">
+                    <h2>Source Code &amp; Privacy</h2>
+                    <p>Fully open-source and locally executed on your machine. Audit the codebase on GitHub or review our zero-collection privacy commitment.</p>
+                    <a href="https://github.com/Joshix-1/Lightcord" target="_blank" rel="noopener noreferrer" class="section-link">GitHub Repository &rarr;</a>
+                </article>
+            </section>
         </main>
 
         <!-- Footer -->
         <footer>
-            <div class="footer-tags">
-                <span>Lightcord Discord Mod</span>
-                <span>Open Source Discord Client</span>
-                <span>Custom Themes &amp; Plugins</span>
-                <span>Windows PC Installer</span>
+            <div class="footer-links">
+                <a href="#download">Download</a>
+                <a href="#plugins">Plugins</a>
+                <a href="#faq">Support &amp; FAQ</a>
+                <button id="openPrivacyFooter" type="button">Privacy Policy</button>
+                <a href="https://github.com/Joshix-1/Lightcord" target="_blank" rel="noopener noreferrer">Source Code</a>
             </div>
             <div>Lightcord &copy; 2026</div>
         </footer>
@@ -757,21 +856,21 @@
             
             <div class="policy-block">
                 <h3>Our Commitment</h3>
-                <p>Lightcord is a lightweight, open-source Discord client mod built to protect your privacy. All client modifications execute locally on your PC with zero external data collection.</p>
+                <p>Lightcord is built to protect your privacy. All client modifications execute locally on your PC with zero external data collection.</p>
             </div>
 
             <div class="policy-block">
                 <h3>Zero Data Collection</h3>
                 <ul>
                     <li>No personal information or Discord tokens are ever collected.</li>
-                    <li>No tracking of your Discord activity, servers, or messages.</li>
+                    <li>No tracking of your Discord activity or messages.</li>
                     <li>No third-party analytics, cookies, or data sharing.</li>
                 </ul>
             </div>
 
             <div class="policy-block">
                 <h3>Security &amp; Disclaimer</h3>
-                <p>Lightcord source code is publicly available on GitHub. Lightcord is an independent Discord client modification and is not affiliated with Discord Inc.</p>
+                <p>The source code is publicly auditable on GitHub. Lightcord is an independent modification and is not affiliated with Discord Inc.</p>
             </div>
         </div>
     </div>
@@ -785,26 +884,19 @@
 
         const modal = document.getElementById('privacyModal');
         const openBtn = document.getElementById('openPrivacy');
+        const openFooterBtn = document.getElementById('openPrivacyFooter');
         const closeBtn = document.getElementById('closePrivacy');
 
-        openBtn.addEventListener('click', function() {
-            modal.style.display = 'flex';
+        openBtn.addEventListener('click', () => modal.style.display = 'flex');
+        openFooterBtn.addEventListener('click', () => modal.style.display = 'flex');
+        closeBtn.addEventListener('click', () => modal.style.display = 'none');
+
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) modal.style.display = 'none';
         });
 
-        closeBtn.addEventListener('click', function() {
-            modal.style.display = 'none';
-        });
-
-        window.addEventListener('click', function(e) {
-            if (e.target === modal) {
-                modal.style.display = 'none';
-            }
-        });
-
-        window.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && modal.style.display === 'flex') {
-                modal.style.display = 'none';
-            }
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.style.display === 'flex') modal.style.display = 'none';
         });
     </script>
 </body>
